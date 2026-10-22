@@ -1,0 +1,42 @@
+# Dependencies / build caches
+node_modules/
+.cache/
+.remotion/
+.webpack/
+dist/
+build/
+*.tsbuildinfo
+coverage/
+
+# Local settings / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.local.json
+
+# Render outputs stay local; keep directory instructions
+video-studio/renders/*
+!video-studio/renders/README.md
+video-studio/out/
+video-studio/tmp/
+video-studio/.qa/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.zip
+*.7z
+
+# Large source media needs an explicit, reviewed add
+video-studio/public/assets/video/*
+!video-studio/public/assets/video/.gitkeep
